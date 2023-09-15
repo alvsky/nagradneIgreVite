@@ -1,0 +1,21 @@
+// default text sizes
+$text-sizes: 12, 16, 21;
+
+// text size options and multipliers
+$text-size-options: (
+    'sm': 0.8,
+    'md': 1.0,
+    'lg': 1.2,
+    'xl': 1.4
+);
+
+// variable text slize classes
+@each $text-size, $multiplier in $text-size-options {
+    [data-text-size="#{$text-size}"] {
+        @each $text-size, $text-sizes {
+            .text-size-#{text-size} {
+                font-size: #{$text-size * $multiplier}px;
+            }
+        }
+    }
+}

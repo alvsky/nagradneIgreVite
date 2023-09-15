@@ -1,0 +1,41 @@
+{
+  "project_info": {
+    "project_number": "377156358075",
+    "firebase_url": "https://nagradne-igre-app.firebaseio.com",
+    "project_id": "nagradne-igre-app",
+    "storage_bucket": "nagradne-igre-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377156358075:android:96f40e3af08e61b929be9e",
+        "android_client_info": {
+          "package_name": "com.bn.nagradneigre"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "377156358075-80vhdlc022lnk3i07mq6sp1avqlujrao.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALiEVskTJhkmIWXrQpZ7qY77qcmGwUhPQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "377156358075-80vhdlc022lnk3i07mq6sp1avqlujrao.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-6629808009427521~7519023097"
+    }
+  ],
+  "configuration_version": "1"
+}
