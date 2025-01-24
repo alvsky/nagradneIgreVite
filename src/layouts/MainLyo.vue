@@ -150,7 +150,7 @@
                   <!-- {{ section.label }} -->
                 </q-item-section>
               </q-item>
-              <q-item
+              <!-- <q-item
                 clickable
                 exact
                 @click="shareNI('shareMe')"
@@ -161,7 +161,7 @@
                 <q-item-section>
                   {{ $t('drawerShare')}}
                 </q-item-section>
-              </q-item>
+              </q-item> -->
               <q-item
                 clickable
                 exact
@@ -220,7 +220,7 @@
 </template>
 
 <script setup>
-// /* eslint-disable */
+/* eslint-disable */
 import { ref, inject, computed, watch, onUpdated, onMounted } from 'vue'
 import { useRouter, useRoute } from 'vue-router'
 import { Platform } from 'quasar'

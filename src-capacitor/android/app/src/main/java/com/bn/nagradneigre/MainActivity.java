@@ -1,10 +1,15 @@
 package com.bn.nagradneigre;
 
+import android.content.BroadcastReceiver;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.os.Build;
 import android.app.PendingIntent;
 import android.content.Intent;
 import android.content.Context;
+
+import androidx.annotation.Nullable;
+
 import com.getcapacitor.BridgeActivity;
 
 public class MainActivity extends BridgeActivity {
@@ -35,6 +40,15 @@ public class MainActivity extends BridgeActivity {
 
   }
 
+// dodano zbog zahtjeva za Android API 34
+public Intent registerReceiver(@Nullable BroadcastReceiver receiver, IntentFilter filter) {
+
+        if (Build.VERSION.SDK_INT >= 34 && getApplicationInfo().targetSdkVersion >= 34) {
+        return super.registerReceiver(receiver, filter, Context.RECEIVER_EXPORTED);
+        } else {
+        return super.registerReceiver(receiver, filter);
+}
+      }
 
 
 
